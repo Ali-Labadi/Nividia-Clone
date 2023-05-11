@@ -1,0 +1,344 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+/* styling the nav bar */
+
+@font-face {
+    font-family: 'GeForce-Bold-Alt', sans-serif;
+    src: url(fonts/GeForce-Bold-Alt.ttf);
+}
+
+body {
+    font-family: 'GeForce-Bold-Alt', sans-serif;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 44.67px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.nav-bar ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 145px 0 145px;
+}
+
+.nav-bar li {
+    display: inline;
+    padding-left: 18px;
+    font-size: 15px;
+}
+
+.nav-bar .shop-link,
+.nav-bar .search-link {
+    padding-left: 110px;
+}
+
+.nav-bar a {
+    color: rgba(102, 102, 102, 0.9);
+    letter-spacing: 1px;
+    transition: ease-in 0.3s;
+}
+
+.nav-bar a:hover {
+    color: rgb(69, 69, 69);
+}
+
+.nav-bar img {
+    width: 135px;
+    height: 80px;
+}
+
+.slideShow-container img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    /* position: static; */
+}
+
+
+/* slide show styling */
+
+.slideShow-container {
+    padding-top: 44.67px;
+    width: 100%;
+    height: 120%;
+    position: relative;
+    margin: auto;
+    transition: ease 3s;
+}
+
+.slides-description>* {
+    position: static;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.slides-description {
+    position: absolute;
+    left: 11em;
+    top: 10em;
+    width: 40%;
+}
+
+.small-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.big-text {
+    font-size: 35px;
+}
+
+.tiny-text {
+    font-size: 20px;
+}
+
+.slides-description a {
+    background-color: #76b900;
+    border-radius: 1px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+
+/* recomended section styling */
+
+.recomended-section {
+    background-color: #1a1a1a;
+    height: 450px;
+}
+
+.recomended-section h2 {
+    display: inline-block;
+    color: #fff;
+    padding: 50px 0px 0px 100px;
+}
+
+.recomended-section a {
+    color: #fff;
+}
+
+.recomended-section .arrow-btns {
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    padding-top: 50px;
+}
+
+.recomended-section .arrow-btns button {
+    color: #fff;
+    background-color: #6aa700;
+    border: none;
+    padding: 5px 3px 5px 3px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    margin-left: 15px;
+}
+
+.recomended-section .arrow-btns button:hover {
+    background-color: #8cc32d;
+}
+
+.recomended-section a {
+    display: inline-block;
+    vertical-align: -4px;
+}
+
+.scrollable-divs {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 20px 0px 20px 75px;
+}
+
+.scrollable-divs::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollable-divs img {
+    width: 300px;
+}
+
+.scrollable-divs div {
+    display: inline-block;
+    background-color: #fff;
+    height: 300px;
+    width: 300px;
+    border-radius: 3px;
+    margin-left: 25px;
+    transition: ease-in 1s;
+}
+
+.scrollable-divs span {
+    display: flex;
+    padding: 30px 0 20px 20px;
+    font-size: 12px;
+}
+
+.scrollable-divs p {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+
+/* bannar styling */
+
+.nividia-gtc-banner {
+    height: 110px;
+    background-color: #f1f1f1;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.nividia-gtc-banner img {
+    height: 80px;
+    width: 80px;
+}
+
+.nividia-gtc-banner div {
+    margin-top: 20px;
+}
+
+.nividia-gtc-banner h3 {
+    font-size: 30px;
+    color: #86b900;
+}
+
+.nividia-gtc-banner p {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.nividia-gtc-banner a {
+    color: #86b900;
+    font-weight: bold;
+}
+
+
+/* footer styling */
+
+footer {
+    background-color: #000;
+    height: 120vh;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.footer-links div {
+    width: 90%;
+    padding-left: 30px;
+}
+
+.footer-links h2 {
+    color: #fff;
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+.footer-links a {
+    color: #86b900;
+    display: block;
+    padding-top: 20px;
+}
+
+.subscription-input {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.socialMedia-links {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.subscription-input .material-symbols-outlined {
+    color: #86b900;
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.signIn-text {
+    margin: 10px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.subscription-input button {
+    background-color: #76b900;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    padding: 0 15px 0 15px;
+    margin-left: 10px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.socialMedia-links {
+    color: #3a3a3a;
+    margin-right: 10px;
+}
+
+.socialMedia-links a {
+    color: #3a3a3a;
+}
+
+.socialMedia-links img {
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    margin-left: 10px;
+}
+
+.under-footer {
+    background-color: #fff;
+    margin-left: 30px;
+    color: #3a3a3a;
+}
+
+.under-footer a {
+    color: #3a3a3a;
+}
+
+.under-footer h2 {
+    padding: 20px 0 20px 0;
+    color: #000;
+}
+
+.under-footer p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 13px;
+}
